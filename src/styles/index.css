@@ -1,12 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Montserrat:wght@200&display=swap');
+*{
+    background-color: rgb(231, 224, 224);
+}
 
-/* 
+.container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.bottom-page-1{
+    width: 98%;
+    background-color: #eeeeee;
+    height: 5px;
+    border-bottom: 1px solid #ddd;
+}
 
-*/
+.bottom-page-2{
+    width: 96%;
+    background-color: #eeeeee;
+    height: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#app{
+    color: rgb(253, 247, 247);
+    width: 100%;
+}
+.counter{
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(133, 133, 133) ;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #eeeeee;
+    border: 1px solid #ddd;
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: -1px;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    color: rgba(207, 168, 168, 0.678);
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: -1px; 
+}
+
+
+ul li {
+    border: 1px solid #ddd;
+    margin-top: -1px; 
+    background-color: #eeeeee;
+    padding: 12px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: dimgrey;
+    display: block;
+    position: relative;
+}
+
+
+ul li:hover {
+    background-color: rgb(236, 235, 235);
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+}
+
+span { 
+    visibility: hidden; 
+}
+
+li:hover span {
+    visibility: visible;
+}
